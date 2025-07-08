@@ -1,0 +1,44 @@
+services:
+  payment-mediator-1:
+    build:
+      context: ./PaymentMediator
+      dockerfile: Dockerfile
+    image: rinha-payment-mediator
+    networks:
+      - backend
+      - payment-processor
+    environment:
+      - PAYMENT_PROCESSOR_URL_DEFAULT=http://payment-processor-default:8080
+      - PAYMENT_PROCESSOR_URL_FALLBACK=http://payment-processor-fallback:8080
+    ports:
+      - "9999:8080"
+    deploy:
+      resources:
+        limits:
+          cpus: "0.75"
+          memory: "175MB"
+
+  payment-mediator-2:
+    build:
+      context: ./PaymentMediator
+      dockerfile: Dockerfile
+    image: rinha-payment-mediator
+    networks:
+      - backend
+      - payment-processor
+    environment:
+      - PAYMENT_PROCESSOR_URL_DEFAULT=http://payment-processor-default:8080
+      - PAYMENT_PROCESSOR_URL_FALLBACK=http://payment-processor-fallback:8080
+    ports:
+      - "9998:8080"
+    deploy:
+      resources:
+        limits:
+          cpus: "0.75"
+          memory: "175MB"
+
+networks:
+  backend:
+    driver: bridge
+  payment-processor:
+    external: true

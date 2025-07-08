@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaymentMediator", "PaymentMediator\PaymentMediator.csproj", "{B1C33622-4211-4A4C-9614-F6F62B4B470F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaymentMediator.Tests", "PaymentMediator.Tests\PaymentMediator.Tests.csproj", "{18592D70-03CD-430C-9CA6-B3077DB26A84}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B1C33622-4211-4A4C-9614-F6F62B4B470F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1C33622-4211-4A4C-9614-F6F62B4B470F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1C33622-4211-4A4C-9614-F6F62B4B470F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1C33622-4211-4A4C-9614-F6F62B4B470F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18592D70-03CD-430C-9CA6-B3077DB26A84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18592D70-03CD-430C-9CA6-B3077DB26A84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18592D70-03CD-430C-9CA6-B3077DB26A84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18592D70-03CD-430C-9CA6-B3077DB26A84}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

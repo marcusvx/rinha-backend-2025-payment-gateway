@@ -1,0 +1,6 @@
+@PaymentMediator_HostAddress = http://localhost:5257
+
+GET {{PaymentMediator_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
